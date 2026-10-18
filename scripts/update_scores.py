@@ -29,6 +29,7 @@ SCORES_URL = "https://www.maxpreps.com/fl/basketball/scores/?date={m}/{d}/{y}"
 ET = ZoneInfo("America/New_York")   # Florida: Eastern (the western Panhandle is Central; Eastern dates are used for the whole state)
 ZERO_ID = "00000000-0000-0000-0000-000000000000"
 RESCHEDULE_DAYS = 21
+FHSAA_FIRST_GAME = "2026-11-16"   # FHSAA 2026-27 boys basketball first regular-season contest Mon Nov 16 (fhsaa.com); earlier games are preseason classics (user decision 2026-10-18)
 GT = {0: "conference", 1: "non-conference", 2: "tournament", 3: "exhibition", 4: "playoff", 5: "conference-tournament"}
 
 LOG_LINES = []
@@ -277,6 +278,9 @@ def merge(site, ledger, finals):
             continue
         if f["date"] < site.season_start:
             c["ignored"] += 1; continue
+        # Florida: nothing before FHSAA_FIRST_GAME counts (preseason classics can't count on W-L; same rule as the schedule build).
+        if f["date"] < FHSAA_FIRST_GAME:
+            c["ignored"] += 1; continue
         key = (frozenset((f["homeMp"], f["awayMp"])), f["date"])
         if key in pairdate and pairdate[key] != f["contestId"]:
             c["dup"] += 1; log(f"  dup: {f['contestId']} same pair+date as {pairdate[key]} (kept first)"); continue
@@ -439,7 +443,7 @@ def main():
         f"(source {args.source}); {len(site.teams)} teams, {len(site.games)} games, season start {site.season_start}")
     rc = 0
     if not args.offline and not args.end_date and args.end.isoformat() < site.season_start:
-        # Florida's first game on the MaxPreps schedules is SEASON_START (2026-10-29, non-FHSAA Christian leagues; FHSAA first regular-season contest Nov 16): before that there is nothing to fetch.
+        # Florida's SEASON_START is the FHSAA first regular-season contest (2026-11-16); earlier preseason classics are not counted, so before that there is nothing to fetch.
         log(f"preseason: today {args.end} is before SEASON_START {site.season_start}; no MaxPreps requests this run")
         args.offline = True
     try:
