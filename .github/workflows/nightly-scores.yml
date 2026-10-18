@@ -1,6 +1,6 @@
 name: Nightly scores
 
-# Florida boys season opens 2026-10-29 (first non-FHSAA Christian-league games; FHSAA first regular-season contest Nov 16). Before that date the script makes no
+# Florida boys season opens 2026-11-16 (FHSAA first regular-season contest; earlier preseason classics are not counted). Before that date the script makes no
 # MaxPreps requests (preseason guard in scripts/update_scores.py), so the schedule below is safe to leave on.
 
 # GitHub cron is UTC and ignores daylight saving time.
