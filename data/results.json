@@ -1,4 +1,18 @@
 {
  "about": "RimRunnerFlorida 2026-27 finals ledger, written by scripts/update_scores.py. Keyed by MaxPreps contest id. homeMp/awayMp are MaxPreps team ids. state: applied | unlisted (one team not in our list; counts for records only) | pending (final between listed teams with no scheduled game yet; awaiting team-page check) | ignored.",
- "finals": {}
+ "finals": {
+  "59f6a42a-edf0-4cc4-899f-f8b83098b7b2": {
+   "awayMp": "3a172d4c-180e-4434-81c1-9d6e91ddc788",
+   "awayScore": 57,
+   "date": "2026-10-29",
+   "forfeit": false,
+   "gameId": "fl26-0001",
+   "homeMp": "823ecd4d-d5c1-4b3d-a1d2-caf6928d29f2",
+   "homeScore": 33,
+   "neutral": null,
+   "source": "scores-page",
+   "state": "applied",
+   "winner": "away"
+  }
+ }
 }
