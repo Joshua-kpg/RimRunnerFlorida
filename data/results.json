@@ -13,6 +13,19 @@
    "state": "unlisted",
    "winner": "away"
   },
+  "47719f53-4500-43f7-a9a8-d28c66b972c9": {
+   "awayMp": "166ac21b-328a-400f-be1a-060504f3e4ec",
+   "awayScore": 79,
+   "date": "2026-11-04",
+   "forfeit": false,
+   "gameId": "fl26-m003",
+   "homeMp": "e2d1cb29-badc-4a9e-bbf9-2bd808381e31",
+   "homeScore": 95,
+   "neutral": null,
+   "source": "scores-page",
+   "state": "applied",
+   "winner": "home"
+  },
   "59f6a42a-edf0-4cc4-899f-f8b83098b7b2": {
    "awayMp": "3a172d4c-180e-4434-81c1-9d6e91ddc788",
    "awayScore": 57,
