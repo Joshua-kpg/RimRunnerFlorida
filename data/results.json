@@ -210,6 +210,21 @@
    "state": "applied",
    "winner": "away"
   },
+  "eb749f0b-f1e6-4a7d-826e-fcb46f175df2": {
+   "awayMp": "166ac21b-328a-400f-be1a-060504f3e4ec",
+   "awayScore": 54,
+   "date": "2026-11-06",
+   "forfeit": false,
+   "gameId": "fl26-x003",
+   "gameType": "non-conference",
+   "homeMp": "8c8dc512-9b32-4602-88f5-6344697f87b1",
+   "homeScore": 53,
+   "neutral": true,
+   "source": "scores-page",
+   "state": "applied",
+   "verified": true,
+   "winner": "away"
+  },
   "f3980938-1f19-45ba-8070-143db4c3cafe": {
    "awayMp": "f62e576a-5d5f-44e8-b9e6-822ba825687d",
    "awayScore": 74,
