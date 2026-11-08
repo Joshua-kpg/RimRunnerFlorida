@@ -1,6 +1,21 @@
 {
  "about": "RimRunnerFlorida 2026-27 finals ledger, written by scripts/update_scores.py. Keyed by MaxPreps contest id. homeMp/awayMp are MaxPreps team ids. state: applied | unlisted (one team not in our list; counts for records only) | pending (final between listed teams with no scheduled game yet; awaiting team-page check) | ignored.",
  "finals": {
+  "089e9d68-6d1d-465b-8d61-c9ddd6c2b8af": {
+   "awayMp": "edc294d4-5612-48f4-9b09-1b28f69e29f8",
+   "awayScore": 85,
+   "date": "2026-11-07",
+   "forfeit": false,
+   "gameId": "fl26-x004",
+   "gameType": "conference",
+   "homeMp": "dabb3339-3817-4206-9eb5-34da05290017",
+   "homeScore": 87,
+   "neutral": true,
+   "source": "scores-page",
+   "state": "applied",
+   "verified": true,
+   "winner": "home"
+  },
   "0d85ad01-05c6-45c2-b556-a18c90a2297e": {
    "awayMp": "da92456a-abce-4da7-afbb-e2e959e66979",
    "awayScore": 31,
@@ -40,15 +55,15 @@
   },
   "3d779175-8e5e-47b7-b85e-0e7af3e1c5e0": {
    "awayMp": "07a2a381-7edb-450a-95fd-4c9100414283",
-   "awayScore": 71,
+   "awayScore": 30,
    "date": "2026-11-06",
    "forfeit": false,
    "homeMp": "a0370da2-de12-49c4-b0b6-8c7e5a409198",
-   "homeScore": 30,
+   "homeScore": 71,
    "neutral": null,
    "source": "scores-page",
    "state": "unlisted",
-   "winner": "away"
+   "winner": "home"
   },
   "3eee25c7-175a-4e9b-8455-31f9f259673a": {
    "awayMp": "5263de1e-149b-43c1-9b2e-3db29faeeee6",
